@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* 62.5 % = 1 rem = 10px */
+    font-size: 62.5%;
+    /* Overflow x is use to hidden element in right of the page to use animations */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
