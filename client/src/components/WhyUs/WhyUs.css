@@ -1,0 +1,21 @@
+.section-why-us{
+    padding:  5rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+ li{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-weight: normal;
+    
+    word-spacing: 5px;
+    line-height: 1.8;
+}

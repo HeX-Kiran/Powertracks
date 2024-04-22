@@ -4,6 +4,11 @@ a{
     text-transform: uppercase;
     transition: all 0.3s ease;
     color: rgba(255, 255, 255, 0.826);
+    width: 7rem;
+}
+
+a:hover{
+    font-size: 1rem;
 }
 
 a.active{

@@ -1,0 +1,55 @@
+.title{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    
+  }
+  
+  .user-page-title{
+
+    font-family: "Roboto", sans-serif;
+    opacity: 0.9;
+    padding: 2rem 0rem;
+    text-align: center;
+    font-size: 125px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #FFF;
+    line-height: 100%;
+  
+    position: relative;
+    letter-spacing: 15px;
+    
+  }
+  
+  .user-page-subtitle{
+   
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    
+  }
+
+  .title-btn{
+    height: 50px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    padding: 0.7rem 3rem;
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+  }
+
+  .title-btn:hover{
+    background-color: transparent;
+    border: 1px solid white;
+  }
+
+
+  
