@@ -5,9 +5,9 @@ import "./Title.css"
 function Title() {
   return (
     <main className="title">
-        <h1 className='user-page-title'>POWERTRACKS</h1>
+        <h1 className='user-page-title'>POWER TRACKS</h1>
             <div className='user-page-subtitle'>
-                    <p className='text-center '>Power Tracks is known in the market as the leading Solar Home Power System</p>
+                    <p className='text-center '>Power Tracks is known in the market as the leading solar home power system</p>
                     <p className='text-center'>provider in all over India.</p>
                     {/* <p className='text-3xl text-center'>book your tickets in seconds...</p> */}
             </div>

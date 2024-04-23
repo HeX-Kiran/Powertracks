@@ -1,0 +1,7 @@
+.service-content{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-self: center;
+    justify-content: center;
+}
+

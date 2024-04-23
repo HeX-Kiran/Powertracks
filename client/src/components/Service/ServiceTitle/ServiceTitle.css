@@ -1,0 +1,29 @@
+.service-title{
+    margin-top: 2rem;
+    padding: 2rem 0rem;
+    background-color: #F7F7F7;
+    color: #A0A0A0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.isActive{
+    color: var(--blue);
+}
+
+.service-title p{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 50%;
+    
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+.service-title p:not(:last-child){
+    border-bottom: 1px solid #bcbbbb;
+}

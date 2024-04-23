@@ -5,6 +5,7 @@ import coverImage from "../../../assets/home-cover.webp"
 import "./Home.css"
 import Title from '../../../components/Title/Title'
 import WhyUs from '../../../components/WhyUs/WhyUs'
+import Service from '../../../components/Service/Service'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
             <div className='dark-overlay'/>
         </div>
         <WhyUs/>
+        <Service/>
         
         
         
