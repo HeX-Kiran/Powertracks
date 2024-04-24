@@ -1,6 +1,6 @@
 .service-title{
-    margin-top: 2rem;
-    padding: 2rem 0rem;
+    /* margin-top: 2rem;
+    padding: 2rem 0rem; */
     background-color: #F7F7F7;
     color: #A0A0A0;
     display: flex;
@@ -15,11 +15,11 @@
 }
 
 .service-title p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding-bottom: 10px;
     text-align: center;
     width: 50%;
-    
+    cursor: pointer;
     font-weight: 600;
     /* text-transform: uppercase; */
 }

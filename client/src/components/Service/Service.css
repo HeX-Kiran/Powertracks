@@ -1,7 +1,12 @@
 .service-content{
     display: grid;
     grid-template-columns: 1fr 5fr;
+    column-gap: 2rem;
     align-self: center;
     justify-content: center;
+}
+
+.service{
+    margin: 4rem 0rem;
 }
 
