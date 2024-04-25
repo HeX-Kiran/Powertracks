@@ -1,0 +1,13 @@
+.pagination-button{
+    font-weight: 600;
+    color: #a0a0a0;
+    font-size:1rem;
+    cursor: pointer;
+} 
+
+.page-active{
+    color:var(--blue);
+    font-weight: bold;
+    scale: 1.5;
+    
+}

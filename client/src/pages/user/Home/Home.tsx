@@ -6,6 +6,7 @@ import "./Home.css"
 import Title from '../../../components/Title/Title'
 import WhyUs from '../../../components/WhyUs/WhyUs'
 import Service from '../../../components/Service/Service'
+import Products from '../../../components/Products/Products'
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
         </div>
         <WhyUs/>
         <Service/>
+        <Products/>
         
         
         
