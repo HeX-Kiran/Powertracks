@@ -1,0 +1,39 @@
+.section-how{
+    margin: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  
+}
+
+.section-how header{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-how h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.section-how button{
+    
+    
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    padding: 0.7rem 5rem;
+    background-color: var(--blue);
+    color: white;
+    font-weight: thin;
+    transition: all 0.3s ease;
+    
+}
+
+.section-how button:hover{
+    background-color: black;
+    border: 1px solid white;
+  }

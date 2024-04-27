@@ -8,6 +8,7 @@ import WhyUs from '../../../components/WhyUs/WhyUs'
 import Service from '../../../components/Service/Service'
 import Products from '../../../components/Products/Products'
 import Projects from '../../../components/Projects/Projects'
+import How from '../../../components/HowItWorks/How'
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         <Service/>
         <Products/>
         <Projects />
+        <How/>
         
         
         
