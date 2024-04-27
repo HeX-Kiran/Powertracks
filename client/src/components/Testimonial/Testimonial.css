@@ -1,0 +1,12 @@
+.section-testimonial{
+    background-color: black;
+    padding: 6rem 5rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+}
+
+.section-testimonial header{
+    text-transform: uppercase;
+}

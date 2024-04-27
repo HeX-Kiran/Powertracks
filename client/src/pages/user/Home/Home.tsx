@@ -9,6 +9,7 @@ import Service from '../../../components/Service/Service'
 import Products from '../../../components/Products/Products'
 import Projects from '../../../components/Projects/Projects'
 import How from '../../../components/HowItWorks/How'
+import Testimonial from '../../../components/Testimonial/Testimonial'
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
         <Products/>
         <Projects />
         <How/>
+        <Testimonial/>
         
         
         
