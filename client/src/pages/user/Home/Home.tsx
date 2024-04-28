@@ -11,6 +11,7 @@ import Projects from '../../../components/Projects/Projects'
 import How from '../../../components/HowItWorks/How'
 import Testimonial from '../../../components/Testimonial/Testimonial'
 import Counter from '../../../components/Counter/Counter'
+import ContactUs from '../../../components/ContactUs/ContactUs'
 
 function Home() {
   return (
@@ -28,11 +29,7 @@ function Home() {
         <How/>
         <Testimonial/>
         <Counter/>
-        
-        
-        
-      
-        
+        <ContactUs/>
         
     </section>
   )

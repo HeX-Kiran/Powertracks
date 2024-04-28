@@ -5,7 +5,7 @@ function Counter() {
     <section className="section-counter">
         <div className="flex items-center justify-center flex-col  counter-container counter--scale-down">
             <h1 >15+</h1>
-            <p>Experience</p>
+            <p>Years Experience</p>
         </div>
         <div className="flex items-center justify-center flex-col  counter-container counter--scale">
             <h1 >5 Gigawatts</h1>

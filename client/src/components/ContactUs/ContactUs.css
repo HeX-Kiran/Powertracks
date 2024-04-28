@@ -1,0 +1,50 @@
+.section-contact-us{
+    padding:  5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--blue);
+}
+
+.section-contact-us form{
+    background-color: #fff;
+    color: black;
+    
+    border-radius: 20px;
+}
+
+.section-contact-us label{
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.section-contact-us input{
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+}
+
+.section-contact-us form button{
+    background-color: black;
+    color: white;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+    
+}
+
+.section-contact-us form button:hover{
+    background-color: var(--blue);
+   
+}
+.form-grid-col-2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 3rem;
+    
+}
