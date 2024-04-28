@@ -1,0 +1,33 @@
+.section-counter{
+    padding: 4rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: #a0a0a0; */
+    color: var(--blue);
+}
+
+.counter-container h1{
+    font-weight: bold;
+    font-size: 5rem;
+    background-image: linear-gradient(to left, #feac5e, #c779d0,#4bc0c8);
+    -webkit-background-clip: text;
+    display: inline-block;
+    -webkit-text-fill-color: #00000000;
+}
+
+.counter--scale{
+    scale: 1.1;
+}
+
+.counter--scale-down{
+    scale: 0.8;
+}
+
+.counter-container p{
+    font-weight: thin;
+    font-size: 1.5rem;
+    color: #7e7e7e;
+    text-transform: uppercase;
+}

@@ -10,6 +10,7 @@ import Products from '../../../components/Products/Products'
 import Projects from '../../../components/Projects/Projects'
 import How from '../../../components/HowItWorks/How'
 import Testimonial from '../../../components/Testimonial/Testimonial'
+import Counter from '../../../components/Counter/Counter'
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
         <Projects />
         <How/>
         <Testimonial/>
+        <Counter/>
         
         
         
