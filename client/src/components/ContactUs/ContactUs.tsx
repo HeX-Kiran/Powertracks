@@ -17,8 +17,9 @@ function ContactUs() {
 
   return (
     <section className="section-contact-us">
-        <div>
-
+        <div className="contact-us-title">
+            <h1>Reserve your <span className="text-teal-200">cost-free </span>consultation with us today!</h1>
+            <p>Receive personalized guidance and have all your questions answered by our dedicated solar expert.</p>
         </div>
         <Form onSave={onSave}>
             <Input label="UserName" type="text" id="name" required/>
