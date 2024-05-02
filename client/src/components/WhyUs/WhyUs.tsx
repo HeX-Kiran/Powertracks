@@ -1,38 +1,51 @@
 import "./WhyUs.css"
 
+import expImg from "../../assets/why-us/exp.png"
+import expertImg from "../../assets/why-us/expert.png"
+import qualityImg from "../../assets/why-us/quality.png"
+import boostImg from "../../assets/why-us/boost.png"
+import Image from "../Image/Image"
+
 function WhyUs() {
   return (
     <section className='section-why-us'>
-        <h1 className="uppercase font-bold text-4xl">Why choose us ?</h1>
+        <h1 className="uppercase font-bold text-4xl">Why choose us </h1>
         <ul>
             <li>
-                <span><i className="ri-building-line text-3xl"></i></span>
+                <Image url={expImg} alt="Experience icon" />
                 <p>
-                    <span className="font-bold">S</span>ince 2012, we has been a top supplier and system integrator for solar products including lights, water heaters, panels, batteries, fencing, surge protection, arresters, and charge controllers.
+                    <h1>Leading Solar Product Supplier and Integrator Since 2012</h1>
+                    <h3>Since 2012, we has been a top supplier and system integrator for solar products including water heaters, panels, batteries and charge controllers etc.</h3>
                 </p>
 
             </li>
 
             <li>
-                <span><i className="ri-vip-diamond-line text-3xl"></i></span>
+                <Image url={expertImg} alt="expert icon" />
                 <p>
-                    <span className="font-bold">O</span>ur products are crafted by expert professionals using top-notch raw materials and advanced technology, ensuring quality and reliability.
+                    <h1>Expertly Crafted, Quality Solar Products</h1>
+                    <h3>Our products are crafted by expert professionals using top-notch raw materials and advanced technology, ensuring quality and reliability.</h3>
+                    
                 </p>
 
             </li>
 
             <li>
-                <span><i className="ri-verified-badge-line text-3xl"></i></span>
+                <Image url={qualityImg} alt="quality icon" />
                 <p>
-                    <span className="font-bold">A</span>dhering to international standards, we offer a diverse range of solar solutions for both domestic and commercial use.
+                    <h1>Top-Quality Solar Solutions for Every Need</h1>
+                    <h3>Adhering to international standards, we offer a diverse range of solar solutions for both domestic and commercial use.</h3>
+                    
                 </p>
 
             </li>
 
             <li>
-                <span><i className="ri-medal-line text-3xl"></i></span>
+            <Image url={boostImg} alt="Efficieny icon" />
                 <p>
-                    <span className="font-bold">C</span>lients value our products for their extended functional life, efficient performance, low maintenance, and eco-friendly design.
+                    <h1>Valued for Durability, Efficiency, and Eco-Friendly Design</h1>
+                    <h3>Clients value our products for their extended functional life, efficient performance, low maintenance, and eco-friendly design.</h3>
+                    
                 </p>
 
             </li>

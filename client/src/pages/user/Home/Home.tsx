@@ -23,12 +23,13 @@ function Home() {
             <div className='dark-overlay'/>
         </div>
         <WhyUs/>
+        <Counter/>
         <Service/>
         <Products/>
         <Projects />
         <How/>
         <Testimonial/>
-        <Counter/>
+        
         <ContactUs/>
         
     </section>
