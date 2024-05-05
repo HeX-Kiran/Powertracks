@@ -12,6 +12,7 @@ import How from '../../../components/HowItWorks/How'
 import Testimonial from '../../../components/Testimonial/Testimonial'
 import Counter from '../../../components/Counter/Counter'
 import ContactUs from '../../../components/ContactUs/ContactUs'
+import About from '../../../components/About/About'
 
 function Home() {
   return (
@@ -28,9 +29,9 @@ function Home() {
         <Products/>
         <Projects />
         <How/>
-        <Testimonial/>
-        
         <ContactUs/>
+        <Testimonial/>
+        <About />
         
     </section>
   )
