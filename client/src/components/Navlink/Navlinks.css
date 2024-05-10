@@ -1,17 +1,17 @@
-a{
+.nav-link{
     cursor: pointer;
     font-size: 0.9rem;
     text-transform: uppercase;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     color: rgba(255, 255, 255, 0.826);
     width: 7rem;
 }
 
-a:hover{
-    font-size: 1rem;
+.nav-link:hover{
+    font-size: 0.95rem;
 }
 
-a.active{
+.nav-link.active{
     font-size: 1.1rem;
     color: white;
 }

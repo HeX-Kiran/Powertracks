@@ -55,7 +55,7 @@ function How() {
         <header >Transform into solar</header>
         <h3>Swtiching to solar made simple in few steps.Let's get started</h3>
         <Timeline timeLineDetails={steps} />
-        <Button text="Get consultation"/>
+        {/* <Button text="Get consultation"/> */}
     </section>
   )
 }

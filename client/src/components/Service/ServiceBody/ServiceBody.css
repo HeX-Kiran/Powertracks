@@ -50,6 +50,7 @@
 
 .service-body-content button p{
      color: white;
+     font-weight: bold;
 }
 
 .service-body-content button:hover{

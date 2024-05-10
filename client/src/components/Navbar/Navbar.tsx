@@ -22,7 +22,7 @@ function Navbar() {
             }
         </ul>
         {/* Nav button */}
-        <Button text='call' className='nav-btn'/>
+        <Button text='Login' className='nav-btn'/>
         
     </nav>
   )

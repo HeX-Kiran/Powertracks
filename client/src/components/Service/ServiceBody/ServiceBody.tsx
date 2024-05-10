@@ -19,7 +19,7 @@ function ServiceBody({service,children,...otherProps}:ServiceBodyProps) {
             
                 <p>{service.desc}</p>
             
-            <Button text="Know more"   />
+            <Button text="Know more" />
         </div>
         <div className="service-img-container">
           <Image url={service.imgSrc} alt={service.title} className="h-[50vh] w-[100%] service-img" />

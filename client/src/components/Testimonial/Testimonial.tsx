@@ -6,7 +6,7 @@ function Testimonial() {
 
     const feedbacks: Feedback[] = [
         {
-            comment:"Powertracksolar offered us first class service, their staff was professional and knowledgeable, disruption was minimal and the team genuinely showed an understanding of the needs of the business and how to best meet our needs",
+            comment:"Powertracksolar offered us first class service, their staff was professional and knowledgeable",
             username:"Mathew Abraham",
             place:"Kozhikode"
         },
