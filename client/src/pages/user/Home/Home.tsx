@@ -1,10 +1,15 @@
-
+// import { Suspense, lazy } from 'react'
 import Navbar from '../../../components/Navbar/Navbar'
 import Image from '../../../components/Image/Image'
 import coverImage from "../../../assets/home-cover.webp"
 import "./Home.css"
 import Title from '../../../components/Title/Title'
 import WhyUs from '../../../components/WhyUs/WhyUs'
+
+// const Service = lazy(()=>import("../../../components/Service/Service"));
+// const Products = lazy(()=>import("../../../components/Products/Products"));
+// const How = lazy(()=>import("../../../components/HowItWorks/How"));
+// const ContactUs = lazy(()=>import("../../../components/ContactUs/ContactUs"));
 import Service from '../../../components/Service/Service'
 import Products from '../../../components/Products/Products'
 import Projects from '../../../components/Projects/Projects'
@@ -23,15 +28,18 @@ function Home() {
             <Title/>
             <div className='dark-overlay'/>
         </div>
-        <WhyUs/>
-        <Counter/>
-        <Service/>
-        <Products/>
-        <Projects />
-        <How/>
-        <ContactUs/>
-        <Testimonial/>
-        <About />
+        {/* <Suspense fallback = {<h1 className='text-6xl'>Loading....</h1>}> */}
+            <WhyUs/>
+            <Counter/>
+            <Service/>
+            <Products/>
+            <Projects />
+            <How/>
+            <ContactUs/>
+            <Testimonial/>
+            <About />
+        {/* </Suspense> */}
+      
         
     </section>
   )

@@ -15,7 +15,7 @@ function WhyUs() {
                 <Image url={expImg} alt="Experience icon" />
                 <p>
                     <h1>Leading Solar Product Supplier and Integrator Since 2012</h1>
-                    <h3>Since 2012, we has been a top supplier and system integrator for solar products including water heaters, panels, batteries and charge controllers etc.</h3>
+                    <h3 className="font-thin">Since 2012, we has been a top supplier and system integrator for solar products including water heaters, panels, batteries and charge controllers etc.</h3>
                 </p>
 
             </li>
@@ -24,7 +24,7 @@ function WhyUs() {
                 <Image url={expertImg} alt="expert icon" />
                 <p>
                     <h1>Expertly Crafted, Quality Solar Products</h1>
-                    <h3>Our products are crafted by expert professionals using top-notch raw materials and advanced technology, ensuring quality and reliability.</h3>
+                    <h3 className="font-thin">Our products are crafted by expert professionals using top-notch raw materials and advanced technology, ensuring quality and reliability.</h3>
                     
                 </p>
 
@@ -34,7 +34,7 @@ function WhyUs() {
                 <Image url={qualityImg} alt="quality icon" />
                 <p>
                     <h1>Top-Quality Solar Solutions for Every Need</h1>
-                    <h3>Adhering to international standards, we offer a diverse range of solar solutions for both domestic and commercial use.</h3>
+                    <h3 className="font-thin">Adhering to international standards, we offer a diverse range of solar solutions for both domestic and commercial use.</h3>
                     
                 </p>
 
@@ -44,7 +44,7 @@ function WhyUs() {
             <Image url={boostImg} alt="Efficieny icon" />
                 <p>
                     <h1>Valued for Durability, Efficiency, and Eco-Friendly Design</h1>
-                    <h3>Clients value our products for their extended functional life, efficient performance, low maintenance, and eco-friendly design.</h3>
+                    <h3 className="font-thin">Clients value our products for their extended functional life, efficient performance, low maintenance, and eco-friendly design.</h3>
                     
                 </p>
 
