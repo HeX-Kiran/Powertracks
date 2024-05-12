@@ -4,20 +4,32 @@ import "./Navbar.css"
 import Button from '../Button/Button'
 import Image from '../Image/Image'
 import logo from  "../../assets/logo.webp"
+import { useNavigate } from 'react-router-dom'
 
-function Navbar() {
-    const links: string[] = ["service","products","contact us", "about"]
+type NavbarProps = {
+    navLinkStyles?: string;
+    navBarStyles?: string;
+}
+
+function Navbar({navLinkStyles,navBarStyles}:NavbarProps) {
+    const links: string[] = ["service","products","contact us", "about"];
+
+    const navigate = useNavigate();
+
+    const handleNavLinkClick = (path: string)=>{
+        navigate(`/${path}`)
+    }
     
 
   return (
-    <nav className='navbar flex items-center justify-between'>
+    <nav className={`navbar flex items-center justify-between ${navBarStyles}`}>
         {/* Brand logo */}
        <Image url={logo} alt='logo' className='w-[10vw]'/>
         {/* Links */}
         <ul>
             {
                 links.map((link)=>{
-                    return <NavLinks link={link} />
+                    return <NavLinks link={link} handleClick ={handleNavLinkClick} navLinkStyles={navLinkStyles}/>
                 })
             }
         </ul>

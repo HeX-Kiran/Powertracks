@@ -1,0 +1,36 @@
+.product-nav-bar{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+    row-gap: 2rem;
+    /* gap: 3rem; */
+    border-bottom: 1px solid black;
+   
+
+    
+
+}
+
+.product-nav-bar h1{
+    justify-self: end;
+}
+
+.product-search-bar{
+    background-color: #F4F4F4;
+    padding: 8px 20px;
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.category-list{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    grid-column: 2/-1;
+    
+}

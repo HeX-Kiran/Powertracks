@@ -1,0 +1,8 @@
+.product-info-layout{
+    padding: 1rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}

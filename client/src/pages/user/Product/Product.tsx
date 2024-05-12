@@ -1,30 +1,23 @@
-import "./ProductLayout.css"
+import "./Product.css"
 
+import ProductNavbar from "./components/ProductNavbar/ProductNavbar"
+import { type ProductDetails } from "../../../components/Products/ProductLayout/ProductLayout"
 import abb3 from "../../../assets/products/abb 3.webp"
 import abb5 from "../../../assets/products/abb5.webp"
 import goldiePanels from "../../../assets/products/goldi.webp"
 import wareePanels from "../../../assets/products/waree.webp"
-import { useState } from "react"
-import Image from "../../Image/Image"
-import Pagination from "../../Pagination/Pagination"
-import Button from "../../Button/Button"
-import { useNavigate } from "react-router-dom"
+import { useMemo, useState } from "react"
+import ProductInfo from "./components/ProductInfo/ProductInfo"
 
-export type ProductDetails = {
-    id:number,
-    category?: string;
-    name:string,
-    desc: string
-    spec:string,
-    subText: string,
-    imgURL: string,
-}
 
-function ProductLayout() {
 
+function Product() {
+
+    
     const products: ProductDetails[] = [
         {
             id:1,
+            category:"Panel",
             name:"Waree Panels",
             desc:"Waree solar panels are high-performance, eco-friendly solar panels known for their efficiency, durability, and environmentally conscious manufacturing processes, making them a popular choice for sustainable energy solutions.",
             spec:"450kW - 900kW Panels",
@@ -33,6 +26,7 @@ function ProductLayout() {
         },
         {
             id:2,
+            category:"Panel",
             name:"Goldie Green Panels",
             desc:"Goldie Green solar panels are high-performance, eco-friendly solar panels known for their efficiency, durability, and environmentally conscious manufacturing processes, making them a popular choice for sustainable energy solutions.",
             spec:"350kW - 800kW Panels",
@@ -41,6 +35,7 @@ function ProductLayout() {
         },
         {
             id:3,
+            category:"Invertor",
             name:"ABB Inverter",
             desc:"An ABB 3kW inverter stands out for its high efficiency, reliability, advanced technology including MPPT and grid-tie capabilities, comprehensive monitoring and control features, and strict safety standards such as anti-islanding protection. These qualities make it a top choice for renewable energy systems and electrical installations.",
             spec:"3kW",
@@ -50,6 +45,7 @@ function ProductLayout() {
         {
             id:4,
             name:"ABB Inverter",
+            category:"Invertor",
             desc:"An ABB 5kW inverter stands out for its high efficiency, reliability, advanced technology including MPPT and grid-tie capabilities, comprehensive monitoring and control features, and strict safety standards such as anti-islanding protection. These qualities make it a top choice for renewable energy systems and electrical installations.",
             spec:"5kW",
             subText:"The ABB 5kW inverter is a high-efficiency, reliable device with advanced technology and safety features, ideal for renewable energy systems and electrical installations.",
@@ -57,48 +53,36 @@ function ProductLayout() {
         },
        
        
-    ]
+    ];
 
-    const [currProduct,setCurrProduct] = useState<number>(0);
+    const[inputValue,setInputValue] = useState("");
 
-    const navigate = useNavigate();
+    const [currentProduct,setCurrentProduct] = useState(0);
 
-    function updateCurrProduct(newProduct: number | string){
-        if(typeof newProduct === "number") setCurrProduct(newProduct);
+    const handleSearchBar = (searchString: string)=>{
+        setInputValue(searchString);
     }
-  return (
-    <main className="product-layout">
-        <div className="product-image-container">
-            {/* Product image header and image */}
-            {/* product description */}
-            <div className="product-image-details flex items-center justify-between pb-2">
-                {/* product id and name */}
-                <div className="flex items-start gap-2 flex-col">
-                    <h3>0{products[currProduct].id}</h3>
-                    <p className="text-lg font-bold">{products[currProduct].name}</p>
-                </div>
-                {/* product specs */}
-                <div className="flex items-start gap-2 flex-col">
-                    <h3>Capacity</h3>
-                    <p className="text-lg font-bold">{products[currProduct].spec}</p>
-                </div>
-            </div>
-            {/* Image */}
-            <Image url={products[currProduct].imgURL} alt={products[currProduct].name} className="h-[56vh] w-[100%]"/>
-        </div>  
-        <div className="product-details-container">
-            <div className="product-details-body">
-                <h1>{`${products[currProduct].name} is one of our best product`}</h1>
-                <p>{products[currProduct].desc}</p>
-                <Button text="More Info" onClick={()=>navigate(`/products/${products[currProduct].id}`)}/>
-            </div>
-            <div className="pagination-container ">
 
-                <Pagination paginationLimit={4} currentPage={currProduct} onClick={updateCurrProduct}/>
-            </div>
-        </div>
-    </main>
+    const categoryList  = useMemo(()=>{
+        const categorys = products.map((item)=>item.category);
+        const filteredCategory = new Set([...categorys]);
+        return [...filteredCategory]
+    },[products]) 
+
+
+
+    console.log(categoryList);
+    
+
+
+  return (
+    <section className='product-page'>
+        <ProductNavbar inputValue={inputValue} handleInputChange={handleSearchBar} categoryList={categoryList}/>
+            
+        
+        
+    </section>
   )
 }
 
-export default ProductLayout
+export default Product

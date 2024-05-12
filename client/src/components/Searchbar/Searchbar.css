@@ -1,0 +1,11 @@
+.search-bar-icon-position{
+    position: absolute;
+    top: 50%;
+    
+    transform: translate(75%,-50%);
+}
+
+.search-bar input{
+    padding-left: 4rem;
+}
+
