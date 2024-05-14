@@ -1,31 +1,24 @@
+import { useNavigate } from "react-router-dom"
 import "./ProductNavbar.css"
-import searchIcon from "../../../../../assets/icons/search.webp"
-import Searchbar from "../../../../../components/Searchbar/Searchbar"
-import { useState } from "react"
 
 
-type ProductNavbarProps = {
-  inputValue: string
-  handleInputChange(text: string): void,
-  categoryList: (string |undefined) [];
-}
 
-function ProductNavbar({inputValue,handleInputChange,categoryList} : ProductNavbarProps) {
 
-    const [currentSelectedCategory,setCategory] = useState(0);
+  
+
+function ProductNavbar() {
+
+  const navigate = useNavigate();
+   
   return (
     <nav className='product-nav-bar'>
-         <h1 className='text-3xl font-bold uppercase tracking-widest'>Powertracks</h1>
-         <Searchbar icon={searchIcon} className="product-search-bar" placeholder="Search" value={inputValue} onChange={(e)=>handleInputChange(e.target.value)}/>
-         <div className="category-list">
-              {
-                  categoryList.map((category,index)=>{
-                    return (
-                      <a onClick={()=>setCategory(index)} className={index === currentSelectedCategory ? "font-bold underline text-xl cursor-pointer":"text-md font-normal cursor-pointer"}>{category}</a>
-                    )
-                  })
-              }
-         </div>
+         <h1 className='text-2xl font-bold uppercase cursor-pointer' onClick={()=>navigate("/")}>Powertracks</h1>
+         <ul >
+              <li><a>Home</a></li>
+              <li><a>Products</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Cart(0)</a></li>
+         </ul>
     </nav>
   )
 }

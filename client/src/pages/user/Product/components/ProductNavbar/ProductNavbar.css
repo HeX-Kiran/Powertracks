@@ -1,20 +1,26 @@
 .product-nav-bar{
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    column-gap: 5rem;
-    row-gap: 2rem;
     /* gap: 3rem; */
-    border-bottom: 1px solid black;
-   
+    /* border-bottom: 1px solid black; */
 
-    
 
 }
 
+.product-nav-bar ul{
+    display: flex;
+    gap: 4rem;
+    font-weight: 400;
+    
+}
+
 .product-nav-bar h1{
+    font-family: "DM Sans", sans-serif;
+}
+
+/* .product-nav-bar h1{
     justify-self: end;
 }
 
@@ -33,4 +39,4 @@
     gap: 3rem;
     grid-column: 2/-1;
     
-}
+} */
